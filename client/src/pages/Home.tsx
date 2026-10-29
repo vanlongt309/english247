@@ -127,8 +127,21 @@ export default function Home() {
         </a>
         <div className="topbar-note"><span className="online-dot" /> ENGLISH STUDY DESK <span className="topbar-divider">/</span> 01</div>
         <div className="topbar-stats" aria-label={`${progress.coins} coins, ${dailyEnergy} of ${DAILY_GOAL} daily energy`}>
-          <span className="topbar-stat coin-stat" aria-label={`${progress.coins} coins`}><span className="resource-icon-frame"><img className="hud-icon" src="/manus-storage/async-images/OEJzGdgxpnNeQxfkLg6Ga0/image-1.webp" alt="" aria-hidden="true" /><span className="coin-letter" aria-hidden="true">W</span></span><span className="resource-quantity"><strong>{progress.coins}</strong><span className="resource-add-badge" aria-hidden="true">+</span></span></span>
-          <span className="topbar-stat energy-stat" aria-label={`${dailyEnergy} of ${DAILY_GOAL} energy today`}><span className="resource-icon-frame"><img className="hud-icon" src="/manus-storage/async-images/HLcXFOjQTDJT7e7kNiY0xW/image-2.webp" alt="" aria-hidden="true" /></span><span className="resource-quantity"><strong>{dailyEnergy}/{DAILY_GOAL}</strong><span className="resource-add-badge" aria-hidden="true">+</span></span></span>
+          <span className="topbar-stat coin-stat" aria-label={`${progress.coins} coins`}>
+            <span className="resource-icon-frame">
+              <img className="hud-icon" src="/manus-storage/async-images/OEJzGdgxpnNeQxfkLg6Ga0/image-1.webp" alt="" aria-hidden="true" />
+              <span className="coin-letter" aria-hidden="true">W</span>
+            </span>
+            <span className="resource-quantity"><strong>{progress.coins}</strong></span>
+            <span className="resource-add-badge" aria-hidden="true">+</span>
+          </span>
+          <span className="topbar-stat energy-stat" aria-label={`${dailyEnergy} of ${DAILY_GOAL} energy today`}>
+            <span className="resource-icon-frame">
+              <img className="hud-icon" src="/manus-storage/async-images/HLcXFOjQTDJT7e7kNiY0xW/image-2.webp" alt="" aria-hidden="true" />
+            </span>
+            <span className="resource-quantity"><strong>{dailyEnergy}/{DAILY_GOAL}</strong></span>
+            <span className="resource-add-badge" aria-hidden="true">+</span>
+          </span>
         </div>
         <a className="topbar-link" href="#how-it-works">How it works <ArrowDownRight size={15} /></a>
       </header>
